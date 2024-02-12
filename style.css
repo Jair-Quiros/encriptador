@@ -1,0 +1,164 @@
+* {
+  margin: 1%;
+  padding: 1%;
+  background-color: #7bb3d5;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  height: 15%;
+}
+
+.body {
+  background-color: #7fb3d5;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+
+#footer {
+  background-color: #7fb3d5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  margin-bottom:10;
+}
+
+.footer h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 10%;
+  width: 95%;
+  justify-content: center;
+  background-color: #7fb3d5;
+
+}
+
+#enc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+#lo {
+  display: inline-block;
+  margin: 1%;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+#txt,
+#reply {
+  background-color: #abebc6;
+  color: black;
+  height: 85px;
+  width: 95%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+#prompt,
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+}
+
+#img0 {
+  width: 100%;
+  height: 150px;
+  margin: 10px 0;
+}
+
+#img1,
+#img2 {
+  width: 100%;
+  height: 15rem;
+}
+
+#buttons {
+  display: flex;
+  gap: 10px;
+}
+#button1 {
+  width: 150px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#button1:hover {
+  background-color: #dd2717;
+}
+
+#button2 {
+  width: 150px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#button2:hover {
+  background-color: #dd2717;
+}
+
+#button3 {
+  width: 150px;
+  padding: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#button3:hover {
+  background-color: #dd2717;
+}
+
+@media only screen and (max-width: 768px) {
+  #txt,
+  #reply {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #buttons {
+    flex-direction: column;
+  }
+
+  #button1,
+  #button2,
+  #button3 {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
