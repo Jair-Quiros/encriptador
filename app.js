@@ -12,6 +12,13 @@ function encriptar() {
     }
 }
 
+function validarEntrada(input) {
+    if (/[^a-z\s]/.test(input.value)) {
+        alert("¡Error! Por favor, ingrese solo letras minusculas y espacios.");
+        input.value = '';
+    }
+}
+
 function desencriptar() {
     let texto = document.getElementById("txt").value;
     
